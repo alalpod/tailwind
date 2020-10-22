@@ -1,0 +1,22 @@
+{
+  "name": "node-http-server",
+  "version": "1.0.0",
+  "description": "Node.js example server starter project",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "watch": "live-server src/ --no-css-inject & nodemon --watch 'src/*.*' -e html, css --exec 'yarn build:css'",
+    "build:css": "postcss src/index.css -o src/build/index.css"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "live-server": "1.2.1",
+    "postcss": "8.1.2",
+    "postcss-cli": "8.1.0",
+    "tailwindcss": "1.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
